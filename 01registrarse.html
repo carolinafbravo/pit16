@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foo</title>
+	
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="_assets/custom.css">
+
+    <link rel="stylesheet" href="_assets/jqm-demos.css">
+<!--
+	<link rel="shortcut icon" href="favicon.ico">
+-->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script src="_assets/datepicker-es.js"></script>
+
+<!-- https://raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-es.js -->
+
+    <script src="_assets/custom.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Registrarse</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+    <form id="reg-form" action="action_page.php">
+      DNI: <span class="fhelp">33444555A</span><br>
+      <input type="text" name="id" value="">
+      <br>
+      Fecha de nacimiento: 
+      <span class="fhelp">DD/MM/AAAAA</span><br>
+      <input type="text" name="lastname" value="">
+      <br>
+      Nombre:<br>
+      <input type="text" name="firstname" value="">
+      <br>
+      Apellidos:<br>
+      <input type="text" name="lastname" value="">
+
+    <label for="tel">Teléfono:</label>
+    <input name="tel" id="tel" value="" type="tel">
+
+      E-mail: <br>
+      <input type="text" name="email" value="">
+      <br>
+      :<br>
+<!--
+      <input type="text" name="address" value="">
+-->
+<label for="textarea">Dirección postal</label>
+<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+<!--
+      <textarea name="address" rows="10" cols="30"></textarea>
+
+-->
+      <br><br>
+      <input type="submit" value="Enviar">
+    </form> 
+
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy;2017</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
+

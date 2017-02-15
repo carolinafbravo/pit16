@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foo</title>
+	
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="_assets/custom.css">
+
+    <link rel="stylesheet" href="_assets/jqm-demos.css">
+<!--
+	<link rel="shortcut icon" href="favicon.ico">
+-->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script src="_assets/datepicker-es.js"></script>
+
+<!-- https://raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-es.js -->
+
+    <script src="_assets/custom.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+
+<div data-role="panel" id="sidepanel">
+
+<!--
+<a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Cerrar</a>
+-->
+<ul class="jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
+
+
+<li class="ui-first-child" data-filtertext="demos homepage" data-icon="home"><a class="ui-btn ui-btn-icon-right ui-icon-home" href=".././">Inicio</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" href="../intro/" data-ajax="false">Histórico</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" href="../intro/" data-ajax="false">Contactar</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-gear" href="../intro/" data-ajax="false">Ajustes</a></li>
+</ul>
+
+</div><!-- /panel -->
+
+
+
+
+	<div data-role="header">
+<!--
+<a href="#" data-icon="home">Home</a></li>
+   <li>  <a href="#" data-icon="gear">Setup</a>
+-->
+	<h2>Inicio</h2>
+
+<a role="button" data-role="button" href="#sidepanel" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
+
+	</div><!-- /header -->
+
+<div id="body" role="main" class="ui-content">
+
+<div class="info">
+<p>Tiene una reserva para el día <strong>29 de febrero de 2047</stron></p>
+<br>
+<a href="#" class="ui-shadow ui-btn ui-corner-all">
+    Modificar</a>
+<br>
+<a href="#" class="ui-shadow ui-btn ui-corner-all">
+    Cancelar</a>
+</div>
+
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy;2017</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
+

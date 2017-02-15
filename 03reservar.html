@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foo</title>
+	
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="_assets/custom.css">
+
+    <link rel="stylesheet" href="_assets/jqm-demos.css">
+<!--
+	<link rel="shortcut icon" href="favicon.ico">
+-->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script src="_assets/datepicker-es.js"></script>
+
+<!-- https://raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-es.js -->
+
+    <script src="_assets/custom.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Reservar</h1>
+	</div><!-- /header -->
+
+	<div id="body" role="main" class="ui-content">
+
+    <form id="booking-form" action="action_page.php">
+
+Seleccione un día: <br>
+<div id="daypicker" > </div>
+<!--
+<input id="daypicker" data-role="date" data-inline="true" type="text">
+-->
+
+<br><br>
+Horas disponibles: <br>
+
+<fieldset id="horas" data-role="controlgroup">
+<legend>13 Febrero 2017</legend>
+
+<input name="hour" id="radio-choice-1" value="10" type="radio">
+<label for="radio-choice-1">10:00</label>
+
+<input name="hour" id="radio-choice-2" value="11" type="radio">
+<label for="radio-choice-2">11:00</label>
+
+<input name="hour" id="radio-choice-3" value="12" type="radio">
+<label for="radio-choice-3">12:00</label>
+
+<input name="hour" id="radio-choice-4" value="13" type="radio">
+<label for="radio-choice-4">13:00</label>
+
+<input name="hour" id="radio-choice-5" value="14" type="radio">
+<label for="radio-choice-5">14:00</label>
+
+<input name="hour" id="radio-choice-6" value="15" type="radio">
+<label for="radio-choice-6">15:00</label>
+
+<input name="hour" id="radio-choice-7" value="16" type="radio">
+<label for="radio-choice-7">16:00</label>
+
+<input name="hour" id="radio-choice-8" value="17" type="radio">
+<label for="radio-choice-8">17:00</label>
+
+<input name="hour" id="radio-choice-9" value="18" type="radio">
+<label for="radio-choice-9">18:00</label>
+
+<input name="hour" id="radio-choice-10" value="19" type="radio">
+<label for="radio-choice-10">19:00</label>
+
+<input name="hour" id="radio-choice-11" value="20" type="radio">
+<label for="radio-choice-11">20:00</label>
+
+<input name="hour" id="radio-choice-12" value="21" type="radio">
+<label for="radio-choice-12">21:00</label>
+
+</fieldset>
+
+
+
+<br><br>
+<input type="submit" value="Reservar">
+
+</form> 
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy;2017</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
+
