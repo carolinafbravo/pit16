@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Carrito Adaptado</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="bower_components/jquery-mobile/css/themes/default/jquery.mobile.css">
+
+  <link rel="stylesheet" href="_assets/custom.css">
+  <link rel="stylesheet" href="_assets/jqm.css">
+
+</head>
+<body>
+
+
+<div data-role="page">
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+
+
+<!---------------------------Header ------------------------------>
+
+<div data-role="header">
+<!--
+<a href="#" data-icon="home">Home</a></li>
+<li>  <a href="#" data-icon="gear">Setup</a>
+-->
+<h2><a href="/#!" style="text-decoration: none">CARRITO
+<span class="glyphicon glyphicon-shopping-cart"></span>
+
+</a></h2>
+
+<a role="button" data-role="button" href="#sidepanel" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
+
+</div><!-- /header -->
+
+<!---------------------- Sidepanel -------------------------------->
+
+<div data-role="panel" id="sidepanel">
+
+<!--
+<a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Cerrar</a>
+-->
+<ul class="jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
+
+<li data-icon="home"><a class="ui-btn ui-btn-icon-right ui-icon-home" ng-href="#/home">Inicio</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/reservar" data-ajax="false">Reservar</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/anular" data-ajax="false">Anular reserva</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/historico" data-ajax="false">Histórico</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/contactar" data-ajax="false">Contactar</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/admin-home" data-ajax="false">Admin ~ Home</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/admin-reservas" data-ajax="false">Admin ~ Reservas</a></li>
+<li><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ng-href="#/admin-usuarios" data-ajax="false">Admin ~ Usuarios</a></li>
+</ul>
+
+</div><!-- /panel -->
+
+<!---------------------------Body ------------------------------>
+
+
+<div id="body" role="main" class="ui-content">
+  <div ng-view></div>
+</div><!-- /content --->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+<!---------------------------Footer ------------------------------>
+	<div data-role="footer">
+		<h4>&copy;2017</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<!--
+     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
+  <script src="_assets/jquery.mobile-1.4.5.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-date/dist/date.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="_assets/custom.js"></script>
+  <script src="app.js"></script>
+  <script src="inicio/inicio.js"></script>
+  <script src="registrarse/registrarse.js"></script>
+  <script src="login/login.js"></script>
+  <script src="home/home.js"></script>
+  <script src="reservar/reservar.js"></script>
+  <script src="historico/historico.js"></script>
+  <script src="contactar/contactar.js"></script>
+  <script src="admin-home/admin-home.js"></script>
+  <script src="admin-reservas/admin-reservas.js"></script>
+  <script src="admin-usuarios/admin-usuarios.js"></script>
+  
+</body>
+</html>

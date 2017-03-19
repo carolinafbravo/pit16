@@ -1,0 +1,30 @@
+<h3>Listado de Usuario</h3>
+
+ <table id="historico" data-role="table" class="ui-responsive">
+<thead>
+<tr>
+  <th>Usuario</th>
+  <th>Acciones</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+  <td>u1</td>
+  <td>[Ver][Eliminar][Enviar Mensaje]</td>
+</tr>
+
+<tr>
+  <td>u2</td>
+  <td>[Ver][Eliminar]</td>
+</tr>
+
+<tr>
+  <td>u3</td>
+  <td>[Ver][Eliminar]</td>
+</tr>
+
+</tbody>
+ </table>
+
